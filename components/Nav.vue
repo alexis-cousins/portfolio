@@ -9,9 +9,10 @@
       px-8
       p-4
       bg-portfolio-dark-grey
+      z-10
     "
   >
-    <div class="text-white">
+    <div class="text-white z-10">
       <h2
         class="
           text-2xl
@@ -26,7 +27,7 @@
         <nuxt-link to="/">Alexis Cousins</nuxt-link>
       </h2>
     </div>
-    <div class="text-white font-semibold uppercase space-x-10">
+    <div class="text-white font-semibold uppercase space-x-10 z-10">
       <nuxt-link to="/">Home</nuxt-link>
       <nuxt-link to="/Skills">Skills</nuxt-link>
       <button
