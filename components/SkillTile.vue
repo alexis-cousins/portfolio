@@ -1,37 +1,42 @@
 <template>
-  <div class="flex">
-    <div
-      class="
-        p-0.5
-        bg-gradient-to-br
-        from-red-500
-        via-pink-500
-        to-indigo-500
-        rounded-md
-      "
-    >
-      <div class="w-36 h-36 rounded-md bg-portfolio-dark-grey">
-        <div class="space-y-2">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6 mx-auto"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-            />
-          </svg>
-          <h2 class="font-semibold text-center">HTML</h2>
-          <p class="text-center text-sm">
-            I can write HTML in line with best practice.
-          </p>
-        </div>
+  <div
+    class="
+      flex
+      mx-auto
+      p-0.5
+      bg-gradient-to-br
+      from-red-500
+      via-pink-500
+      to-indigo-500
+      rounded-md
+    "
+  >
+    <div class="w-36 rounded-md bg-portfolio-dark-grey">
+      <div class="space-y-2 p-4">
+        <img class="h-6 w-6 mx-auto" :src="skill.svg" alt="logo" />
+        <h2 class="font-semibold text-center">{{ skill.title }}</h2>
+        <p class="text-center text-sm">
+          {{ skill.description }}
+        </p>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  props: {
+    skill: {
+      type: Object,
+      default: {
+        title: "",
+        description: "",
+        svg: "",
+      },
+    },
+  },
+};
+</script>
+
+<style>
+</style>

@@ -1,18 +1,19 @@
 <template>
   <div>
-    <section class="grid grid-cols-2 gap-12 px-16 border-indigo-500 border-b-2">
+    <section class="grid grid-cols-2 gap-12 px-16">
       <div class="flex flex-col space-y-10 mt-24 pb-40">
         <h1 class="text-3xl font-bold">Hi, I'm Alexis.</h1>
         <h1 class="text-3xl font-bold">
           I am a junior front-end web developer currently based in Auckland, New
           Zealand.
         </h1>
-        <ContactButton class="m-auto" />
+        <ContactButton class="m-auto" @click="$router.push('/Contact')" />
       </div>
 
       <div class="bg-indigo-500 h-full text-gray-900">Insert image here</div>
     </section>
-    <section class="border-indigo-500 border-b-2 pb-10">
+    <Divider />
+    <section class="pb-10">
       <div class="mt-6">
         <h1 class="text-3xl font-bold uppercase text-center">Skillset</h1>
         <p class="m-10">
@@ -20,24 +21,23 @@
           Yoobee Colleges, in Auckland. I have accquired a range skills as a
           part of this course, including:
         </p>
-        <div class="w-3/5 mx-auto grid grid-cols-3 space-x-6 space-y-12">
-          <SkillTile />
-          <SkillTile />
-          <SkillTile />
-          <SkillTile />
-          <SkillTile />
-          <SkillTile />
+        <div class="w-3/5 mx-auto grid grid-cols-3 gap-6">
+          <SkillTile
+            v-for="(skill, index) in skills"
+            :key="index"
+            :skill="skill"
+          />
         </div>
       </div>
     </section>
-    <section class="px-16 py-6 border-indigo-500 border-b-2">
+    <Divider />
+    <section class="px-16 py-6">
       <div class="mt-6">
         <h1 class="text-3xl font-bold uppercase text-center">Projects</h1>
       </div>
     </section>
-    <section
-      class="grid grid-cols-2 gap-12 px-16 py-6 border-indigo-500 border-b-2"
-    >
+    <Divider />
+    <section class="grid grid-cols-2 gap-12 px-16 py-6">
       <div class="mt-6 space-y-10">
         <h1 class="text-3xl font-bold uppercase text-center">
           Connect with me!
@@ -48,7 +48,7 @@
           socials below!
         </p>
       </div>
-      <div class=""><ContactForm /></div>
+      <ContactForm />
     </section>
   </div>
 </template>
@@ -60,7 +60,38 @@ export default {
 
   data() {
     return {
-      skills: [],
+      skills: [
+        {
+          title: "HTML",
+          description: "I can write HTML in line with best practice.",
+          svg: "img/html.svg",
+        },
+        {
+          title: "HTML",
+          description: "I can write HTML in line with best practice.",
+          svg: "",
+        },
+        {
+          title: "HTML",
+          description: "I can write HTML in line with best practice.",
+          svg: "",
+        },
+        {
+          title: "HTML",
+          description: "I can write HTML in line with best practice.",
+          svg: "",
+        },
+        {
+          title: "HTML",
+          description: "I can write HTML in line with best practice.",
+          svg: "",
+        },
+        {
+          title: "HTML",
+          description: "I can write HTML in line with best practice.",
+          svg: "",
+        },
+      ],
     };
   },
 };
