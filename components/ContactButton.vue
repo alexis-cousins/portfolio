@@ -1,5 +1,6 @@
 <template>
   <button
+    @click="$emit('click')"
     class="
       font-bold
       w-40
@@ -13,7 +14,7 @@
       rounded-lg
     "
   >
-    <nuxt-link to="/Contact"> Get In Touch</nuxt-link>
+    Get In Touch
   </button>
 </template>
 
