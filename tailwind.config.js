@@ -13,6 +13,14 @@ module.exports = {
         },
       },
     },
+
+    fontFamily: {
+      sans: ["Hind"],
+      serif: ["Hind"],
+      mono: ["Hind"],
+      display: ["Hind"],
+      body: ["Hind"],
+    },
   },
   variants: {
     extend: {},

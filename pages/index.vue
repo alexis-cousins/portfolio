@@ -1,7 +1,7 @@
 <template>
   <div>
-    <section class="grid grid-cols-2 gap-12 px-16">
-      <div class="flex flex-col space-y-10 mt-24 pb-40">
+    <section class="grid grid-cols-2 gap-12">
+      <div class="flex flex-col space-y-10 mt-36 pb-40">
         <h1 class="text-3xl font-bold">Hi, I'm Alexis.</h1>
         <h1 class="text-3xl font-bold">
           I am a junior front-end web developer currently based in Auckland, New
@@ -10,9 +10,11 @@
         <ContactButton class="m-auto" @click="$router.push('/Contact')" />
       </div>
 
-      <div class="bg-indigo-500 h-full text-gray-900">Insert image here</div>
+      <div class="mx-auto">
+        <img src="/img/hero.png" alt="hero illustration" />
+      </div>
     </section>
-    <Divider />
+    <Divider class="h-4" />
     <section class="pb-10">
       <div class="mt-6">
         <h1 class="text-3xl font-bold uppercase text-center">Skillset</h1>
@@ -31,22 +33,33 @@
       </div>
     </section>
     <Divider />
-    <section class="px-16 py-6">
-      <div class="mt-6">
-        <h1 class="text-3xl font-bold uppercase text-center">Projects</h1>
+    <section class="">
+      <h1 class="text-3xl font-bold uppercase text-center">Projects</h1>
+      <p class="my-10">
+        I have completed a number of projects utilising a range of skillsets
+        during my last year of study. From pure HTML/CSS to a full stack MEVN
+        project, please view some of my completed projects below:
+      </p>
+      <div class="flex flex-col">
+        <ProjectTile
+          v-for="(project, index) in projects"
+          :key="index"
+          :project="project"
+        />
       </div>
     </section>
     <Divider />
-    <section class="grid grid-cols-2 gap-12 px-16 py-6">
+    <section class="grid grid-cols-2 gap-12 pt-6 pb-12">
       <div class="mt-6 space-y-10">
         <h1 class="text-3xl font-bold uppercase text-center">
           Connect with me!
         </h1>
         <p>
           If you feel I’d be a good fit for your team, let’s chat! Please enter
-          your details and I’ll get back to you, or you can contact me via
-          socials below!
+          your details and I’ll get back to you, or contact me via my Linkedin
+          below!
         </p>
+        <Socials />
       </div>
       <ContactForm />
     </section>
@@ -56,40 +69,60 @@
 <script>
 export default {
   name: "Home",
-  layout: "app",
 
   data() {
     return {
       skills: [
+        {
+          title: "Vue/Nuxt",
+          description: "I regularly use JS frameworks in projects.",
+          svg: "img/vue.svg",
+        },
+        {
+          title: "Tailwind",
+          description: "I regularly use Tailwind for my front-end.",
+          svg: "img/tailwind.svg",
+        },
+        {
+          title: "Github",
+          description: "Experience with Github and version control",
+          svg: "img/github.svg",
+        },
         {
           title: "HTML",
           description: "I can write HTML in line with best practice.",
           svg: "img/html.svg",
         },
         {
-          title: "HTML",
-          description: "I can write HTML in line with best practice.",
-          svg: "",
+          title: "CSS/SCSS",
+          description: "Utilise styling frameworks within project.",
+          svg: "img/css3.svg",
         },
         {
-          title: "HTML",
-          description: "I can write HTML in line with best practice.",
-          svg: "",
+          title: "Node JS",
+          description: "Building a backend API for MongoDB with ExpressJS.",
+          svg: "img/nodedotjs.svg",
+        },
+      ],
+      projects: [
+        {
+          name: "ThriftMe",
+          skillset: "Mongoose, Express, Vue, Node, Github",
+          route: "projects-thrift-me",
+          landingImage: "/img/thrift1.png",
+        },
+
+        {
+          name: "Fungi Files",
+          skillset: "Mongoose, Express, Nuxt, Node, Github",
+          route: "projects-fungi-files",
+          landingImage: "/img/fungi1.png",
         },
         {
-          title: "HTML",
-          description: "I can write HTML in line with best practice.",
-          svg: "",
-        },
-        {
-          title: "HTML",
-          description: "I can write HTML in line with best practice.",
-          svg: "",
-        },
-        {
-          title: "HTML",
-          description: "I can write HTML in line with best practice.",
-          svg: "",
+          name: "Free Range",
+          skillset: "HTML, Vanilla JS, SCSS",
+          route: "projects-free-range",
+          landingImage: "/img/freerange1.png",
         },
       ],
     };

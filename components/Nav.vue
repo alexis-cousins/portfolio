@@ -9,7 +9,7 @@
       px-8
       p-4
       bg-portfolio-dark-grey
-      z-10
+      z-20
     "
   >
     <div class="text-white z-10">
@@ -34,13 +34,14 @@
         class="
           font-semibold
           text-portfolio-dark-grey
-          uppercase
           bg-gradient-to-r
           from-red-500
           via-pink-500
           to-indigo-500
+          uppercase
           px-3
-          py-1
+          pt-1
+          pb-0.5
           rounded-lg
         "
       >
