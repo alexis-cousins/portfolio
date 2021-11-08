@@ -32,7 +32,10 @@
         </div>
       </div>
     </section>
-    <Divider />
+    <div id="projects">
+      <Divider />
+    </div>
+
     <section class="">
       <h1 class="text-3xl font-bold uppercase text-center">Projects</h1>
       <p class="my-10">

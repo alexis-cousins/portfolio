@@ -1,6 +1,31 @@
 <template>
-  <div class="my-24 grid grid-cols-2">
+  <div class="my-10 grid grid-cols-2">
     <div class="text-3xl mx-auto pr-4 font-bold">
+      <nuxt-link to="/"
+        ><div class="mb-10 text-base font-normal flex flex-row items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M11 17l-5-5m0 0l5-5m-5 5h12"
+            />
+          </svg>
+          <button
+            type="button"
+            class="pt-0.5"
+            @click="$router.push({ to: '/', hash: 'projects' })"
+          >
+            Back to Projects
+          </button>
+        </div></nuxt-link
+      >
       <h1 class="mb-10">{{ title }}</h1>
       <h1 class="my-6">{{ description }}</h1>
     </div>

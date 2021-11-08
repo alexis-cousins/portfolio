@@ -5,6 +5,7 @@
       :description="description"
       :githubLink="githubLink"
       :appLink="appLink"
+      class="border border-red-500"
     />
     <ProjectIndexItem>
       <template v-slot:title>The Brief:</template>
