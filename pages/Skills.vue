@@ -602,7 +602,7 @@
           listed below in order of aptitude. Select a skill in order to view the
           specific abilites I currently possess within the given context. Please
           note, these aptitude levels are considered relative to my current
-          standing as a Junior/Graduate developer:
+          standing as a Junior/Graduate front-end developer:
         </p>
         <div class="w-full my-6">
           <Skillbar
@@ -633,14 +633,15 @@
               from-red-500
               via-pink-500
               to-indigo-500
-              py-1
+              pt-1.5
+              pb-1
               rounded-lg
             "
           >
             View All Projects
           </button>
         </nuxt-link>
-        <CVButton />
+        <CVButton @click="showResume" />
         <GithubButton />
       </div>
     </section>
@@ -655,24 +656,65 @@ export default {
     return {
       skills: [
         {
-          name: "HTML",
+          name: "Vue/Nuxt",
           confidence: "Confident",
           width: "w-full",
-        },
-        {
-          name: "CSS/SCSS",
-          confidence: "Confident",
-          width: "w-full",
+          skillset: [
+            "Very effectively create and employ components across a project to reduce repeated code",
+            "Pass props through to components from parent to child",
+            "Create custom events to further pass data",
+            "Distribute content via slots, both single and named",
+            "Use various Lifecycle hooks to achieve a range of outcomes",
+            "Employ computed properties to reduce repeated code",
+            "Utilise data binding syntax such as v-bind and v-on, including class and style binding",
+            "Effectively use conditional rendering logic (v-if, v-show, v-else)",
+            "Use list rendering functionality, including nested v-for loops",
+            "Write methods to handle DOM events",
+            "Employ form input bindings",
+          ],
         },
         {
           name: "Tailwind",
           confidence: "Confident",
           width: "w-full",
+          skillset: [
+            "Rapily style front end elements in markup using Tailwind classes",
+            "Create responsive design for a wide range of screen sizes",
+            "Create customization via Tailwind configuration files",
+            "Add custom fonts and colour palettes to projects",
+            "Add transition and transformations with discretion to create a smooth, engaging user flow experience",
+            "Manipulate SVGs",
+            "Utilise hover, focus and other states across applicable contexts",
+          ],
         },
         {
-          name: "Vue/Nuxt",
+          name: "HTML",
           confidence: "Confident",
           width: "w-full",
+          skillset: [
+            "Execute HTML markup in line with best practices",
+            "Differentiate different HTML elements and know when to implement them in code (e.g. when to use <button> vs. <a> tags",
+            "Target elements via class and id",
+            "Follow HTML style guides and coding conventions",
+            "Create fully functional forms using various input types",
+            "Utilise and manipulate SVG's across a range of projects",
+            "Consider differing browser support levels across different platforms",
+            "Utilise lists and tables",
+            "Employ styles and semantics for assist in front end UI",
+          ],
+        },
+        {
+          name: "CSS/SCSS",
+          confidence: "Confident",
+          width: "w-full",
+          skillset: [
+            "Utilise available selectors based on different contexts and needs",
+            "Employ psuedo-classes and elements where required",
+            "Style elements using Flex rather than position",
+            "Create cascading style sheets",
+            "Style elements using SCSS with ease",
+            "Employ advanced CSS such as gradients, shadows, rounding and object postitioning",
+          ],
         },
         {
           name: "Javascript",
@@ -684,19 +726,42 @@ export default {
           name: "Figma",
           confidence: "Competent",
           width: "w-2/3",
+          skillset: [
+            "Rapid prototyping",
+            "Produce both lo-fi and hi-fi prototypes in line with UX design process",
+            "Conduct user flow testing and amend designs based on feedback",
+            "Produce front end code that is a pixel perfect match to a Figma prototype",
+          ],
         },
         {
           name: "Github",
-          confidence: "Competent",
-          width: "w-2/3",
+          confidence: "Capable",
+          width: "w-1/3",
+          skillset: [
+            "Foundational knowledge of software version control system",
+            "Consistent ability to manage a shared repo and resolve merge conflicts in a team environment",
+            "Clear and systematic approach to labelling and committing code to online repositories",
+            "Knowledge of the Github command line interface",
+          ],
         },
         {
           name: "Express",
           confidence: "Capable",
           width: "w-1/3",
+          skillset: [
+            "Create a basic Express server",
+            "Built a RESTful API using Mongoose with basic CRUD functionality",
+          ],
         },
       ],
     };
+  },
+
+  methods: {
+    showResume: function () {
+      const pdf = "/ACResume.pdf";
+      window.open(pdf);
+    },
   },
 };
 </script>
