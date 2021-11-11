@@ -8,7 +8,7 @@
         <p>
           If you feel I’d be a good fit for your team, let’s chat! Please enter
           your details and I’ll get back to you, or you can contact me via
-          socials below!
+          Linkedin below!
         </p>
         <Socials />
       </div>
