@@ -1,13 +1,6 @@
 <template>
   <div
-    class="
-      min-h-screen
-      w-screen
-      flex
-      bg-portfolio-dark-grey
-      text-white
-      flex-col
-    "
+    class="min-h-screen w-full flex bg-portfolio-dark-grey text-white flex-col"
   >
     <!-- Illustration behind nav hero content -->
     <div
