@@ -32,13 +32,7 @@
     <ProjectIndexItem>
       <template v-slot:title>The Tech Stack:</template>
       <template v-slot:body>
-        <div class="w-3/5 mx-auto grid grid-cols-3 gap-6">
-          <SkillTile
-            v-for="(skill, index) in skills"
-            :key="index"
-            :skill="skill"
-          />
-        </div>
+        <SkillTileGrid :skills="skills" />
       </template>
     </ProjectIndexItem>
     <ProjectIndexItem>
@@ -57,7 +51,7 @@ export default {
       title: "Free Range:",
       produced: "June 2021",
       description: "A New Zealand-based journey planning web app.",
-      github: "https://github.com/",
+      github: "https://github.com/alexis-cousins/free-range",
       appLink: "/projects/free-range/app",
       skills: [
         {

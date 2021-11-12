@@ -35,13 +35,7 @@
     <ProjectIndexItem>
       <template v-slot:title>The Tech Stack:</template>
       <template v-slot:body>
-        <div class="w-3/5 mx-auto grid grid-cols-3 gap-6">
-          <SkillTile
-            v-for="(skill, index) in skills"
-            :key="index"
-            :skill="skill"
-          />
-        </div>
+        <SkillTileGrid :skills="skills" />
       </template>
     </ProjectIndexItem>
     <ProjectIndexItem>
