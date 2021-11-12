@@ -3,6 +3,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      screens: {
+        xs: "480px",
+      },
       colors: {
         portfolio: {
           "light-grey": "#484A4C",
