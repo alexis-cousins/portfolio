@@ -2,8 +2,9 @@
   <div class="w-full flex flex-col">
     <ProjectIndexTitle
       :title="title"
+      :produced="produced"
       :description="description"
-      :githubLink="githubLink"
+      :github="github"
       :appLink="appLink"
     />
     <ProjectIndexItem>
@@ -55,8 +56,9 @@ export default {
   data() {
     return {
       title: "Fungi Files:",
+      produced: "August 2021",
       description: "A 'shroom-sharing fullstack CRUD application.",
-      githubLink: "https://github.com/",
+      github: "https://github.com/alexis-cousins/mushroom-hunting",
       appLink: "/projects/fungi-files/app",
       skills: [
         {

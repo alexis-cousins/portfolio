@@ -2,8 +2,9 @@
   <div class="w-full flex flex-col">
     <ProjectIndexTitle
       :title="title"
+      :produced="produced"
       :description="description"
-      :githubLink="githubLink"
+      :github="github"
       :appLink="appLink"
     />
     <ProjectIndexItem>
@@ -54,8 +55,9 @@ export default {
   data() {
     return {
       title: "Free Range:",
+      produced: "June 2021",
       description: "A New Zealand-based journey planning web app.",
-      githubLink: "https://github.com/",
+      github: "https://github.com/",
       appLink: "/projects/free-range/app",
       skills: [
         {

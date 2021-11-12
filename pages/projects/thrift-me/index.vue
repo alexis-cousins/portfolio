@@ -2,8 +2,9 @@
   <div class="w-full flex flex-col">
     <ProjectIndexTitle
       :title="title"
+      :produced="produced"
       :description="description"
-      :githubLink="githubLink"
+      :github="github"
       :appLink="appLink"
     />
     <ProjectIndexItem>
@@ -57,9 +58,10 @@ export default {
   data() {
     return {
       title: "ThriftMe:",
+      produced: "September 2021",
       description:
         "A C2C platform for preloved clothing and fashion accessories.",
-      githubLink: "https://github.com/",
+      github: "https://github.com/alexis-cousins/C2C-ecommerce-store",
       appLink: "/projects/thriftme/app",
       skills: [
         {
