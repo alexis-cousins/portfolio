@@ -1,5 +1,5 @@
 <template>
-  <div class="my-10 grid grid-cols-2">
+  <div class="my-10 grid grid-cols-1 md:grid-cols-2">
     <div class="text-3xl mx-auto pr-4 font-bold">
       <nuxt-link to="/"
         ><div class="mb-10 text-base font-normal flex flex-row items-center">
