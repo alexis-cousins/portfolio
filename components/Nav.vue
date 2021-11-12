@@ -1,9 +1,10 @@
 <template>
   <div
     class="
-      flex
+      flex flex-col
+      sm:flex-row
       w-full
-      h-20
+      minh-20
       justify-between
       items-center
       px-8
@@ -27,7 +28,19 @@
         <nuxt-link to="/">Alexis Cousins</nuxt-link>
       </h2>
     </div>
-    <div class="text-white font-semibold uppercase space-x-10 z-10">
+    <div
+      class="
+        text-white
+        font-semibold
+        uppercase
+        grid grid-cols-2
+        xs:grid-cols-3
+        items-center
+        gap-2
+        sm:gap-4
+        z-10
+      "
+    >
       <nuxt-link to="/">Home</nuxt-link>
       <nuxt-link to="/Skills">Skills</nuxt-link>
       <button
@@ -43,6 +56,8 @@
           pt-1
           pb-0.5
           rounded-lg
+          col-span-2
+          xs:col-span-1
         "
       >
         <nuxt-link to="/Contact">Contact</nuxt-link>
