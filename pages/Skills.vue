@@ -720,6 +720,16 @@ export default {
           name: "Javascript",
           confidence: "Competent",
           width: "w-2/3",
+          skillset: [
+            "Confidence with Javascript building blocks such as variables, strings, numbers, and arrays",
+            "Confidence with fundamental code blocks such as loops, conditional statements, functions and events",
+            "Experience working with JSON data",
+            "Familiarity with DOM manipulation",
+            "Confidence working with asycnhronous Javascript, using fetch and working with promises",
+            "Experience using RegEx",
+            "Competency using equality comparisons and working with sameness",
+            "Confidence with dynamic typing",
+          ],
         },
 
         {
