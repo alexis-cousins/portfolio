@@ -78,7 +78,7 @@
     <Nav />
 
     <div class="flex flex-grow py-8 h-full z-10" ref="scrolled">
-      <nuxt class="mx-auto h-full max-w-7xl px-10" />
+      <nuxt class="mx-auto max-w-7xl px-10 flex-grow" />
     </div>
 
     <!-- <Footer /> -->
