@@ -1,6 +1,6 @@
 <template>
-  <div class="h-screen flex items-center -mt-28 -mb-8 z-0">
-    <section class="grid grid-cols-2 gap-12">
+  <div class="flex md:items-center -mb-8 z-0">
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-12">
       <div class="my-auto space-y-10">
         <h1 class="text-3xl font-bold uppercase text-center">
           Connect with me!
@@ -12,7 +12,7 @@
         </p>
         <Socials />
       </div>
-      <div class=""><ContactForm /></div>
+      <ContactForm />
     </section>
   </div>
 </template>
