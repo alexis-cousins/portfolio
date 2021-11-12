@@ -1,7 +1,7 @@
 <template>
   <div>
-    <section class="grid grid-cols-2 gap-12">
-      <div class="flex flex-col space-y-10 mt-36 pb-40">
+    <section class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <div class="flex flex-col space-y-10 sm:mt-16 lg:mt-36 sm:pb-6 lg:pb-40">
         <h1 class="text-3xl font-bold">Skills & Education:</h1>
         <h1 class="text-2xl font-bold">
           I am currently finishing up my Level 6 diploma in Web and UX at Yoobee
@@ -12,7 +12,7 @@
         <svg
           xmlns="http://www.w3.org/2000/svg"
           data-name="Layer 1"
-          class="w-4/5 mx-auto mt-10"
+          class="w-1/2 lg:w-4/5 mx-auto mt-2 lg:mt-10"
           viewBox="0 0 820 725.17352"
           xmlns:xlink="http://www.w3.org/1999/xlink"
         >
@@ -594,7 +594,7 @@
         </svg>
       </div>
     </section>
-    <section class="my-4">
+    <section class="my-16">
       <div>
         <h1 class="text-2xl font-bold my-4">Technical Abilities:</h1>
         <p class="text-base">
@@ -620,7 +620,9 @@
         View my current projects, download my CV or check out my public Github
         repo's to see my code base and how I work below:
       </p>
-      <div class="my-8 flex justify-around">
+      <div
+        class="my-8 grid grid-cols-1 md:grid-cols-3 gap-6 place-items-center"
+      >
         <nuxt-link to="/">
           <button
             @click="$router.push({ to: '/', hash: 'projects' })"
