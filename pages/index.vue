@@ -15,7 +15,7 @@
       </div>
     </section>
     <Divider class="h-4" />
-    <section class="pb-10">
+    <section class="">
       <div class="mt-6">
         <h1 class="text-3xl font-bold uppercase text-center">Skillset</h1>
         <p class="m-10">
@@ -30,6 +30,33 @@
             :skill="skill"
           />
         </div>
+        <nuxt-link to="/skills">
+          <button
+            @click="$router.push({ to: '/', hash: 'skills' })"
+            class="
+              font-bold
+              w-48
+              flex
+              mx-auto
+              my-10
+              text-portfolio-dark-grey
+              uppercase
+              bg-gradient-to-r
+              from-red-500
+              via-pink-500
+              to-indigo-500
+              pt-1.5
+              pb-1
+              rounded-lg
+              transition
+              transform
+              duration-150
+              hover:scale-105
+            "
+          >
+            <span class="mx-auto">View All Skills</span>
+          </button>
+        </nuxt-link>
       </div>
     </section>
     <div id="projects">
