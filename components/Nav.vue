@@ -33,9 +33,10 @@
         text-white
         font-semibold
         uppercase
-        grid grid-cols-2
-        xs:grid-cols-3
+        grid grid-cols-3
+        xs:grid-cols-4
         items-center
+        text-center
         gap-2
         sm:gap-4
         z-10
@@ -43,6 +44,7 @@
     >
       <nuxt-link to="/">Home</nuxt-link>
       <nuxt-link to="/Skills">Skills</nuxt-link>
+      <h1 class="cursor-pointer" @click="showResume">CV</h1>
       <button
         class="
           font-semibold
@@ -56,7 +58,6 @@
           pt-1
           pb-0.5
           rounded-lg
-          col-span-2
           xs:col-span-1
         "
       >
@@ -67,5 +68,12 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    showResume: function () {
+      const pdf = "/ACResume.pdf";
+      window.open(pdf);
+    },
+  },
+};
 </script>
