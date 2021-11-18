@@ -34,9 +34,10 @@
         font-semibold
         uppercase
         grid grid-cols-3
+        xxs:grid-cols-2
+        text-center
         xs:grid-cols-4
         items-center
-        text-center
         gap-2
         sm:gap-4
         z-10
