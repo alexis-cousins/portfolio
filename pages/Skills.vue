@@ -602,7 +602,7 @@
           listed below in order of aptitude. Select a skill in order to view the
           specific abilites I currently possess within the given context. Please
           note, these aptitude levels are considered relative to my current
-          standing as a Junior/Graduate front-end developer:
+          standing as a Graduate/Junior front-end developer:
         </p>
         <div class="w-full my-6">
           <Skillbar

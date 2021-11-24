@@ -4,7 +4,7 @@
       <div class="flex flex-col space-y-10 mt-10 md:mt-36 md:pb-40">
         <h1 class="text-3xl font-bold">Hi, I'm Alexis.</h1>
         <h1 class="text-3xl font-bold">
-          I am a junior front-end web developer currently based in Auckland, New
+          I am a graduate front-end web developer currently based in Auckland, New
           Zealand.
         </h1>
         <ContactButton class="m-auto" @click="$router.push('/Contact')" />
