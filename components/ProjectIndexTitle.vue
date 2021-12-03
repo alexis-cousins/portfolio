@@ -31,7 +31,7 @@
       <h1 class="my-6">{{ description }}</h1>
     </div>
 
-    <div class="space-y-8 mx-auto justify-center flex flex-col">
+    <div class="space-y-8 mx-auto justify-center flex flex-col" v-if="github">
       <!-- <button
         class="
           font-bold

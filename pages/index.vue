@@ -196,6 +196,12 @@ export default {
           route: "projects-free-range",
           landingImage: "/img/freerange1.png",
         },
+        {
+          name: "Forest and Bird (A Wordpress Site)",
+          skillset: "php, CSS, Wordpress and Woocommerce",
+          route: "projects-forest-bird",
+          landingImage: "/img/forest1.png",
+        },
       ],
     };
   },
