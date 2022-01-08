@@ -680,7 +680,7 @@ export default {
           confidence: "Confident",
           width: "w-full",
           skillset: [
-            "Rapily style front end elements in markup using Tailwind classes",
+            "Rapidly style front end elements in markup using Tailwind classes",
             "Create responsive design for a wide range of screen sizes",
             "Create customization via Tailwind configuration files",
             "Add custom fonts and colour palettes to projects",
@@ -728,7 +728,7 @@ export default {
             "Experience working with JSON data",
             "Familiarity with DOM manipulation",
             "Confidence working with asycnhronous Javascript, using fetch and working with promises",
-            "Experience using RegEx",
+            "Experience using RegEx for input validation",
             "Competency using equality comparisons and working with sameness",
             "Confidence with dynamic typing",
           ],
