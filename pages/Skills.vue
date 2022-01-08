@@ -4,7 +4,7 @@
       <div class="flex flex-col space-y-10 sm:mt-16 lg:mt-36 sm:pb-6 lg:pb-40">
         <h1 class="text-3xl font-bold">Skills & Education:</h1>
         <h1 class="text-2xl font-bold">
-          I am currently finishing up my Level 6 diploma in Web and UX at Yoobee
+          In 2021 I completed my Level 6 diploma in Web and UX at Yoobee
           College, Auckland, New Zealand.
         </h1>
       </div>

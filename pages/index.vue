@@ -65,7 +65,7 @@
       <div class="mt-6">
         <h1 class="text-3xl font-bold uppercase text-center">Skillset</h1>
         <p class="m-10">
-          I am currently completing the Level 6 Web and UX Design diploma at
+          In 2021 I completed the Level 6 Web and UX Design diploma at
           Yoobee Colleges, in Auckland. I have accquired a range skills as a
           part of this course, including:
         </p>
